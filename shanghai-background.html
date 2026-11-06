@@ -86,13 +86,10 @@
     function computeViewport(width, height, dpr, bounds) {
       const rows = bounds.maxY - bounds.minY + 1;
       const cols = bounds.maxX - bounds.minX + 1;
-      const cellHeight = Math.max(height / rows, width / (cols / 2));
-      const cellWidth = cellHeight / 2;
-      const visibleRows = height / cellHeight;
+      const cellHeight = height / rows;
+      const cellWidth = Math.max(cellHeight / 2, width / cols);
       const centerX = (bounds.minX + bounds.maxX + 1) / 2;
       const centerY = (bounds.minY + bounds.maxY + 1) / 2;
-      const bottomLimit = Math.min(bounds.maxY + 1, 48);
-      const focusY = Math.max(centerY, bottomLimit - visibleRows / 2);
       return {
         width,
         height,
@@ -100,7 +97,7 @@
         cellWidth,
         cellHeight,
         originX: width / 2 - centerX * cellWidth,
-        originY: height / 2 - focusY * cellHeight
+        originY: height / 2 - centerY * cellHeight
       };
     }
 
