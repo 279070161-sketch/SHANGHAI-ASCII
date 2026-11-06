@@ -118,8 +118,8 @@
       const L8 = new AsciiLayer(8, "设计公社-下沉庭院与清水砼工坊", 0.66);
       const L9 = new AsciiLayer(9, "留仙大道高架与地铁5号线", 0.74);
       const L10 = new AsciiLayer(10, "西丽云巴与地铁5号线列车", 0.78);
-      const L11 = new AsciiLayer(11, "公社创客市集-咖啡与机器狗", 0.88);
-      const L12 = new AsciiLayer(12, "近景创客露台与南国榕树气根", 1.00);
+      const L11 = new AsciiLayer(11, "柴火创客中心与公社街区", 0.88);
+      const L12 = new AsciiLayer(12, "街区动态车流与绿道骑行", 1.00);
 
       for (let x = -128; x <= 128; x++) {
         L1.set(x, -48, ".");
@@ -490,18 +490,18 @@
         "|________________________|"
       ]);
 
-      L8.stampSolid(-34, 9, [
-        "\\================================/",
-        " \\==============================/ ",
-        "  \\============================/  ",
-        "   \\======  下沉路演剧场 =====/   ",
-        "    \\========================/    ",
-        "     \\======================/     ",
-        "      \\====================/      ",
-        "       \\==================/       "
+      L8.stampSolid(-35, 9, [
+        "¡=======================================¡",
+        "|   柴 火 创 客 中 心 · CHAIHUO HUB     |",
+        "|---------------------------------------|",
+        "|  [x.factory 新造公社]  [SEEED 矽递]   |",
+        "|  |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|  |‾‾‾‾‾‾‾‾‾‾|   |",
+        "|  |  OPEN SOURCE HW  |  | AIoT LAB |   |",
+        "|  |__________________|  |__________|   |",
+        "|_______________________________________|"
       ]);
 
-      L8.stampSolid(6, 9, [
+      L8.stampSolid(9, 9, [
         "¡==========================¡",
         "|  C区 · 硬件实验室 FABLAB |",
         "|--------------------------|",
@@ -512,7 +512,7 @@
         "|__________________________|"
       ]);
 
-      L8.stampSolid(37, 9, [
+      L8.stampSolid(40, 9, [
         "¡========================¡",
         "|  D区 · 设计公社展厅    |",
         "|------------------------|",
@@ -523,7 +523,7 @@
         "|________________________|"
       ]);
 
-      L8.stampSolid(66, 9, [
+      L8.stampSolid(69, 9, [
         "¡====================¡",
         "|  留仙洞 · 创客公寓 |",
         "|--------------------|",
@@ -534,7 +534,7 @@
         "|____________________|"
       ]);
 
-      L8.stampSolid(91, 9, [
+      L8.stampSolid(94, 9, [
         "¡======================¡",
         "|  万科云设计公社·东院 |",
         "|----------------------|",
@@ -556,7 +556,7 @@
         L9.set(x, 25, "_");
       }
       for (let p = -114; p <= 118; p += 30) {
-        for (let y = 26; y <= 29; y++) L9.text(p, y, "|||");
+        for (let y = 26; y <= 27; y++) L9.text(p, y, "|||");
       }
       L9.stampSolid(-34, 23, [
         "¡----------------------------------------------¡",
@@ -570,121 +570,178 @@
         " (____________|_|________________|_|________________|_|________________|_|________________|_|_____|"
       ]);
 
-      L11.stampSolid(-124, 29, [
+      L11.stampSolid(-124, 28, [
         "¡====================¡",
         "| 公社咖啡 COMMUNE   |",
-        "|====================|",
+        "|--------------------|",
         "|   _@__@__@__@__    |",
         "|  :\\|/\\|/\\|/\\|/-:   |",
-        "|___|____|____|______|"
+        "|  |  o   o   o  |   |",
+        "|__|____|____|___|___|"
       ]);
 
-      L11.stampSolid(-98, 29, [
+      L11.stampSolid(-99, 28, [
         "¡------------------¡",
         "| 精酿啤酒 TAPROOM |",
         "|------------------|",
         "|   [o]  [o]  [o]  |",
         "|   |‾‾‾‾‾‾‾‾‾‾‾|  |",
+        "|   |  CRAFT    |  |",
         "|___|___________|__|"
       ]);
 
-      L11.stampSolid(-74, 29, [
+      L11.stampSolid(-76, 28, [
         "¡------------------¡",
         "| 硬件快制打样中心 |",
         "|------------------|",
         "|  [SMT]   [CNC]   |",
+        "|  |‾‾‾|   |‾‾‾|   |",
         "|  |___|   |___|   |",
         "|__________________|"
       ]);
 
-      L11.stampSolid(44, 29, [
+      L11.stampSolid(-33, 28, [
+        "¡===============================================================¡",
+        "|          柴 火 创 客 中 心 · CHAIHUO MAKER CENTER             |",
+        "|---------------------------------------------------------------|",
+        "|  [x.factory 新造公社]   [OPEN SOURCE HW]   [SEEED 矽递科技]   |",
+        "|  |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|   |‾‾‾‾‾‾‾‾‾‾‾‾‾‾|   |‾‾‾‾‾‾‾‾‾‾‾‾‾‾|   |",
+        "|  | 3D PRINT | LASER |   |  >-o-<  [°_°]|   | PCB | AIoT   |   |",
+        "|__|__________|_______|___|______________|___|_____|________|___|"
+      ]);
+
+      L11.stampSolid(48, 28, [
         "¡--------------------¡",
         "| 创客路演阶梯剧场   |",
         "|--------------------|",
         "|  \\ \\ \\ \\ \\ \\ \\ \\   |",
         "|   \\ \\ \\ \\ \\ \\ \\ \\  |",
-        "|____\\_\\_\\_\\_\\_\\_\\_\\_|"
+        "|    \\ \\ \\ \\ \\ \\ \\ \\ |",
+        "|_____\\_\\_\\_\\_\\_\\_\\_\\|"
       ]);
 
-      L11.stampSolid(70, 29, [
+      L11.stampSolid(72, 28, [
         "¡----------------------¡",
         "| 留仙洞·设计书店 BOOK |",
         "|----------------------|",
         "|  |||||  |||||  ||||| |",
         "|  |   |  |   |  |   | |",
-        "|__|___|__|___|__|___|_|"
+        "|  |___|  |___|  |___| |",
+        "|______________________|"
       ]);
 
-      for (let x = -128; x <= 128; x++) {
-        L11.set(x, 35, "-");
-        if (x % 8 < 4) L11.set(x, 37, "=");
-        L11.set(x, 39, "_");
-      }
+      L11.stampSolid(98, 28, [
+        "¡-----------------------¡",
+        "| 工业设计坊 DESIGN LAB |",
+        "|-----------------------|",
+        "|  [CMFlab]   [MODEL]   |",
+        "|  |‾‾‾‾‾‾|   |‾‾‾‾‾|   |",
+        "|  |______|   |_____|   |",
+        "|_______________________|"
+      ]);
 
-      for (const tx of [-44, -8, 22, 102]) {
-        L11.stampSolid(tx, 30, [
+      for (const tx of [-51, 35]) {
+        L11.stampSolid(tx, 29, [
           "  (:::::)  ",
           " (:::::::) ",
           "  `\\| |/´  ",
           "    |||    ",
-          "    |||    "
+          "    |||    ",
+          "   _|||_   "
         ]);
       }
 
-      L11.stampSolid(-24, 35, [
-        "  _o     [°_°]-/ ",
-        "  /|\\    /|‾|\\   ",
-        "  / \\    '' ''   "
+      for (let x = -128; x <= 128; x++) {
+        const mx = x + 1024;
+        L11.set(x, 35, "=");
+        if (mx % 4 === 0) L11.set(x, 39, "·");
+        else if (mx % 4 === 2) L11.set(x, 39, "-");
+        if (mx % 10 < 5) L11.set(x, 43, "=");
+        L11.set(x, 47, "_");
+      }
+
+      // Band 1 (y = 36..38): Greenway Bicycles, Electric Scooters & Quadruped Robot Dog
+      L12.stampSolid(-114, 36, [
+        "  o__  ",
+        " ,>/-_ ",
+        "(*) (*)"
       ]);
-      L11.stampSolid(56, 35, [
+      L12.stampSolid(-72, 36, [
+        " [°_°]-/",
+        " /|‾|\\  ",
+        " '' ''  "
+      ]);
+      L12.stampSolid(-28, 36, [
         "   o__   ",
         " _,>/´_- ",
         "(*) \\(*) "
       ]);
-      L11.stampSolid(-76, 35, [
-        "   _________     ",
-        " //___][__\\\\____ ",
-        "|o _  粤B  | _ o)",
-        "'-(0)-------(0)´ "
+      L12.stampSolid(18, 36, [
+        "  o    ",
+        " /|__l ",
+        "(o)==(o)"
+      ]);
+      L12.stampSolid(64, 36, [
+        "  o__  ",
+        " ,>/-_ ",
+        "(*) (*)"
+      ]);
+      L12.stampSolid(106, 36, [
+        "  o  [BOX]",
+        " ,>/--|_| ",
+        "(*)===(*) "
       ]);
 
-      L12.stampSolid(-128, 38, [
-        "   ._.-~-.-.   .-._                    ",
-        " (::::..:.:.`-',L:`.   ._.-.           ",
-        "(.:::::::`.,:-!-`.- _.(:::::.)         ",
-        " (:::::: i'!,'.. .':. :,.' !/|         ",
-        "  `\\:::` i'-.`-._\\   :,.' `.!'i        ",
-        "     ||: !.. >_.-`:``.!'i  /_.-'       ",
-        "     ||!,'. :\\,  :( , . / ':'-._       ",
-        "     ||_\\  ._J|,l`-!L  ).7 ', ':       ",
-        "    _||_`:`__\\\\  \\ :\\\\(V/ `:/:_        ",
-        "   ! ! `. 7.--:l_:l  ||\\\\ _J\\  :       "
+      // Band 2 (y = 40..43): Eastbound Motor Lane — 粤B EVs, Autonomous Shuttle & Chaihuo Van
+      L12.stampSolid(-118, 40, [
+        "  .---------.    ",
+        " /___][___\\__\\_  ",
+        "|o _  粤B   _ o) ",
+        "'-(0)------(0)-' "
+      ]);
+      L12.stampSolid(-58, 40, [
+        " .----------------. ",
+        "| [o] 无人小巴 [o] |",
+        "|  [][][][]    _ o) ",
+        "'-(0)----------(0)-'"
+      ]);
+      L12.stampSolid(10, 40, [
+        "  .-----------.    ",
+        " / [][][] [][]\\___ ",
+        "|o _  粤B·AI   _ o)",
+        "'-(0)---------(0)-'"
+      ]);
+      L12.stampSolid(74, 40, [
+        " .---------------.   ",
+        "| CHAIHUO x.VAN  |__ ",
+        "|o _  粤B·创客   _ o)",
+        "'-(0)-----------(0)-'"
       ]);
 
-      L12.stampSolid(-58, 38, [
-        "                            _o       `.            (_\\   ,\\________.-----------------------;`‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾",
-        "              \\ \\ \\\\\\_\\ \\  (::L       ` \\         / ¡====)\\_                    `===========`               ",
-        "               \\_\\ \\_\\\\ \\ \\ ¡i           \\       / / ¨¨¨\\ /       >-o-<            `=============`          ",
-        "                 \\ \\ \\ \\ \\ \\!!·           .      '|      )       _[||]_              `============`         ",
-        "                             \\             \\      /      |      |______|     ,------------------------------",
-        "                              \\   __________/ ·   :  :___|_       ||  ||    /‾‾‾‾‾                      _o  ",
-        "                       _..--==-=-=-=-= |=| =-=-=`-,·____\\ |=| =-=-=-=-==--.._                          V::)!",
-        "               __..--===-=-=-=-=-=-=-=-=- -=-=-=    || ||  - -=-=-=-=-=-=-=-=-===--..__               .//   ",
-        "        ..--==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-   \\ (!! !;      =-=-=-=-=-=-=-=-=-=-=-=-==--..           ``   ",
-        "     --==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=         {§ §§          =-=-=-=-=-=-=-=-=-=-=-=-==--               "
+      // Band 3 (y = 44..47): Westbound Motor Lane — 粤B Sedans, Robotaxi & Cloud Bus
+      L12.stampSolid(-98, 44, [
+        "   .---------.   ",
+        " _/__][____\\  \\  ",
+        "(o _   粤B  _ o| ",
+        " '-(0)------(0)-'"
       ]);
-
-      L12.stampSolid(86, 38, [
-        "          [==]        ._.-~-.-.        ",
-        "           ||       (:::::..:.:.)      ",
-        "           ||     (:::::::::::::::)    ",
-        "           ||    (:::::::,.-~-..:::)   ",
-        "           ||      `\\:::/'     `\\|/    ",
-        "           ||-.-`    |||        |||    ",
-        "        _  ||   o    |||        |||    ",
-        "       /:) ||  /:)   |||        |||    ",
-        "       |¡  ||  |¡   _|||_      _|||_   ",
-        "       '!  ||  '!  ' ` ' `    ' ` ' `  "
+      L12.stampSolid(-30, 44, [
+        "    .--[LIDAR]--.  ",
+        " __/___][____\\___\\ ",
+        "(o _  ROBOTAXI _ o|",
+        " '-(0)---------(0)-'"
+      ]);
+      L12.stampSolid(42, 44, [
+        "   .----------.   ",
+        " _/__][_____\\  \\  ",
+        "(o _  粤B·SZ _ o| ",
+        " '-(0)-------(0)-'"
+      ]);
+      L12.stampSolid(100, 44, [
+        " .----------------. ",
+        "|  [][][][] [][][]|",
+        "(o _  万科云巴  _ |",
+        " '-(0)---------(0)-'"
       ]);
 
       return [L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12];
@@ -694,6 +751,12 @@
       5: 3.5,   // Low-altitude drone fleet cruising across the sky
       10: -11.0 // Metro Line 5 / Xili Sky-Shuttle gliding across Liuxian Avenue viaduct
     };
+
+    const STREET_TRAFFIC_BANDS = [
+      { id: "bike", yStart: 36, yEnd: 38, velocity: 5.5 },
+      { id: "eastCar", yStart: 40, yEnd: 43, velocity: 11.5 },
+      { id: "westCar", yStart: 44, yEnd: 47, velocity: -14.0 }
+    ];
 
     const SCRAMBLE_CHARS = "!<>-_\\\\/[]{}=+*^?#%@·.:;'";
     const TOTAL_REVEAL_MS = 2800;
@@ -797,6 +860,30 @@
           targetCtx.drawImage(this.canvas, baseX + wrapWidth, baseY, w, h);
         }
       }
+
+      drawBand(targetCtx, yStart, yEnd, offsetX, offsetY, wrapWidth = 0) {
+        if (!this.layer.visible) return;
+        const top = Math.max(yStart, this.bounds.minY);
+        const bottom = Math.min(yEnd, this.bounds.maxY);
+        if (top > bottom) return;
+        const rowOffset = top - this.bounds.minY;
+        const rowCount = bottom - top + 1;
+        const sy = Math.round(rowOffset * this.viewport.cellHeight * this.viewport.dpr);
+        const sh = Math.min(
+          this.canvas.height - sy,
+          Math.round(rowCount * this.viewport.cellHeight * this.viewport.dpr)
+        );
+        if (sh <= 0) return;
+        const w = this.canvas.width / this.viewport.dpr;
+        const h = rowCount * this.viewport.cellHeight;
+        const baseX = this.viewport.originX + this.bounds.minX * this.viewport.cellWidth + offsetX;
+        const baseY = this.viewport.originY + top * this.viewport.cellHeight + offsetY;
+        targetCtx.drawImage(this.canvas, 0, sy, this.canvas.width, sh, baseX, baseY, w, h);
+        if (wrapWidth > 0) {
+          targetCtx.drawImage(this.canvas, 0, sy, this.canvas.width, sh, baseX - wrapWidth, baseY, w, h);
+          targetCtx.drawImage(this.canvas, 0, sy, this.canvas.width, sh, baseX + wrapWidth, baseY, w, h);
+        }
+      }
     }
 
     class SkylineRenderer {
@@ -890,15 +977,22 @@
         return this.pending.size === 0 ? "settled" : "reveal";
       }
 
-      drawScene(pointer, parallaxScale, spriteOffsets) {
+      drawScene(pointer, parallaxScale, spriteOffsets, bandOffsets) {
         this.clear();
         for (const cache of this.caches) {
           const slot = cache.layer.slot;
           const px = pointer.x * cache.layer.depthRate * -6 * parallaxScale;
           const py = pointer.y * cache.layer.depthRate * -4 * parallaxScale;
-          const spriteShift = (spriteOffsets[slot] || 0) * this.viewport.cellWidth;
-          const wrapW = LAYER_SPRITE_VELOCITIES[slot] ? this.viewport.worldWidth : 0;
-          cache.draw(this.ctx, px + spriteShift, py, wrapW);
+          if (slot === 12) {
+            for (const band of STREET_TRAFFIC_BANDS) {
+              const shiftPx = (bandOffsets[band.id] || 0) * this.viewport.cellWidth;
+              cache.drawBand(this.ctx, band.yStart, band.yEnd, px + shiftPx, py, this.viewport.worldWidth);
+            }
+          } else {
+            const spriteShift = (spriteOffsets[slot] || 0) * this.viewport.cellWidth;
+            const wrapW = LAYER_SPRITE_VELOCITIES[slot] ? this.viewport.worldWidth : 0;
+            cache.draw(this.ctx, px + spriteShift, py, wrapW);
+          }
         }
       }
     }
@@ -918,6 +1012,7 @@
       let currentPtr = { x: 0, y: 0 };
       let targetPtr = { x: 0, y: 0 };
       let spriteOffsets = { 5: 0, 10: 0 };
+      let bandOffsets = { bike: 0, eastCar: 0, westCar: 0 };
 
       let renderer = new SkylineRenderer(canvas, layers, BOUNDS);
 
@@ -939,8 +1034,11 @@
             const slot = Number(slotStr);
             spriteOffsets[slot] = ((spriteOffsets[slot] || 0) + (vel * dt) / 1000) % totalCols;
           }
+          for (const band of STREET_TRAFFIC_BANDS) {
+            bandOffsets[band.id] = ((bandOffsets[band.id] || 0) + (band.velocity * dt) / 1000) % totalCols;
+          }
 
-          renderer.drawScene(currentPtr, parallaxScale, spriteOffsets);
+          renderer.drawScene(currentPtr, parallaxScale, spriteOffsets, bandOffsets);
         }
         requestAnimationFrame(tick);
       }
