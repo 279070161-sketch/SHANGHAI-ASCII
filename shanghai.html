@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>muShanghai | 上海 12 层景深 ASCII 字符天际线</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style id="jgs7-font-style">
+    @font-face{font-family:jgs7;src:url(data:font/woff2;base64,d09GMgABAAAAABqkAA4AAAAAZ9AAABpKAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGiYGYACMRggEEQgKgZps+h8LhiAAATYCJAOGJgQgBYNjB5NXG2xTB9i4GnvQHeDF3UoFRVSuniqKClJO9v9/RnIyhkDKNrtW1RNGZKJMo3Ykxk6JpF8hZ1BRZoRc6pgwJ53CZKyL1l0LJYL8cFCwKQOLDwSZAoH1rmcX1bUbuZ+X/sK4LJ7AwEOFS3rLbPTpadhmw8rWJjc99YmS0eOu57y3nXp0VDTEJ8PeOpuNkXguPE95/547meSLhady8kqnW3MK2DtxCXBsrN1jjVoZ0TNTqcQXMUPMFo9NQH+0CqPtVRBrw3uQ5cJQg1DP58yqJ4ql1FNYg2CcsBeQ/2lvh4zqZcdZYbApqNvehBZED3GQ4AepxhZwnK1WqfZSe3EGaGhAzqtUZHIAgHqyTTtB9PVs/f7qQMUTxJOAb44qXKMfiR3i+blNEGum78vNI0klkiKheaiBxOAfOJfYhAfkM19b1vuLvOZTV7IEih5NlD7CnHKIjz0t8P4I4EE8oQ8/Dkevp9U/XbTVfd10fgKD72NpVdJ6hTYqdV45sH9DfZ1TdC3soiM6ott0rQPozq9V6ETQGUfQrFd06O9t+m+7R2uZHuo97j5p/hBP/38QKqpSdOmkPRfGurreB4IXrylkTyzpkyFAe/ZqJnfXfjOmmWzCn/WJqApwlUmZnqBMyU5PRZ+mSlO1aVMUbQi+9tPxuX3B+zMRzgGXiISOka1yqGq0699eJ8OSyyUqmPbiopHAE8mUzvEH7R7Gpot8upff3ccQmaC0pPH8sQQE4M5TMAGebE97AfDssIdAgHggo5wUgsjsIGhAAQIIoAmb2zjQUgeQNpuqxSOfWeDGwE87FpgBDH39AOvNOp0YC1Lgpvf/Jukt5w5ydoDK6gFDAIeq7FIOXVlJ8r8prQ2YCGoCzX/cAkttsNk2+xxy1kWXZRJDtASylIdsUYvUVp1VT3Wsr7q9tkaZMQoHwQwteoywZMxYcmcqM1nAOnayn8Mc5yRn8QmJyBi4AjNYBtugZtAu6Bh0DnrkH3oAzjMKYO72LHridnxZJHdj7Fufy+Jcy94zz9mg27gfF//13A8+3u6rZyfHfutvfa/Naq09l+/Sf/HmfG5zP7uzM+edO3NZsSJNNVJfHTXVUJE/f04aSjISAmxOcJQjHOQA+9nJNjawgvpcOXEkBCzaMIaPj9JHt//v7qQyLdtxifYAEIIRFMMJkqKZLDaHy+MLhCKxRCqTK5QqtUar0xuMJrPFarM7nC63R1dP38DQyNjE1MzcwtLK2sbWjkKl2Ts4Ojm7uLq5e3hSBCCdwWSxOVweXyCEYEQklkhlckU2bqhhhhthpFFGG2MsGDgEJBQ0DCwcPAIiEjIKKho6BiYWNg4uHj4BIRExCSkZOQUlFTUNLR09AyMTMwsrGzsHJxc3Dy8fv4CgkLCIqJi4hKSUtIysnLyCopKyiqqauoamlraOrp6+gaFjJ06dOXfh0pVrN27duffg0ZNnL169QSQrqqYbpmU7rucDPBULINcC9H6BFdgLres4duHcpWtXbtx5cO/RLS+eC6zIclnd3GxkAbDvWnBSbUkcccZy74BDdABX9MqBjlLebmxG/hgSC+wQyOO5/+kfoJyp7EUM2ClYsnViktrwu/4BhPVHffIFBXFFueuPKl13jgq4ZWDIyPq91h/zL2BNcyD/PwGQOQFwckJ9BFlPyD4AgNKgBAVXSoADslMhRlk70LgUrxzpUVKiziQ24886jF2543ZcxIc7aHql1V0Ru+sFlA8VeTAy447wu76qzl7vrMbCoNcz5jG4e2iYsaN3wLrLhcT6MX2gp+eerboDhxlzrmb9KjrCAmaql7lrtBX9IkLPIEqN51rHhlDDJWA+wz4yvHOHCO+1K4rThdlefCYB2Tv+zoqNW3ceIyonquOPe1J1UzP77zCXXbmv8Xcn51E1ZXtrzIppUVMoDont3nMaL27JPPdnL0+5cq69DO53OCxP5b2p2GbgoIQpzPafDOTQ7NrBxYGuXlGY+rpVp91Vl4/OurP5vicFPck4Dt2j8kAhgviPJuhYbXDRwlu4k9ed918cv0W9Ye4dBzF7TMZHjs3eYVB4OXYa+f6by6TctbptmM7+8RCGQqU3790H834duPAhWjmq9mzVZNjbPWqfiKYwbaO+OQ7TmmlxC/1x9K7vZl0/be+7PtabiyXLJFflzes9jlPGzEyky3p/ov+4oR8GHczu5UH1/Vj97P790rk/3j+qhgXDA/u3bxizj+oe3W/dlPs+wVg1MfMi7n3wwHkw9EfZoT3DLB0Y0sd7tB51rxunOKk66L03hAEXOFLmkyccx5s66zNrTZ74ea35XqxKsRi9FSVFK9wIhkKKSrEu9suM3cEtdZuNGj3CenwAkY+rzOlgK7Ic/8nOP0S8KpZCaaJ1z1uUPUibra3bkPDetCr/hsyBdTZlmgMsNsQNlSGqZV3Y8wbu3BS+y4bOO7fLsUpkJ1MRm5QI4V33ryuydU2neFktkgx2uzycZNR/XxAMJneRVsP91ctDz3NAFuWlivbkNucU/xX6ZRqVMoLO5HUlg1RzEJtyjC5DbQFy1DKhQ6UHr6Y0i18aeR1L3WrFrt5oNxPc8EK25ONLTU80eYzLUwvV+yp5yRqOg2bYvC8IyAIZiVSzdMV2fMnFqKYvColYxG3d2SdXjpSxFj3BykWVjexmBq8q/Q4F2l68YWPS7hdG3JAbAshnVhscEa9mgkJYlCZ8EjtSFe9k/Locs20oVDju5PcR9e3C7CfGcTq+N3VqfxwdZXcQqnov6cJFyKIlTpYptgTa/j3kPPFxYVJkCBZqp9PI9Wl8f75PpAt7dh9LODR6U+I+r/WoFVR1SNS01ypCVCrxXGW9PUUu0o6DSOVF0RR3hmh2/qIZZl3FKqlmH1ugqFVMj4nmljQyLOuIJCJHteY2rk/Ly0v4pEV5F1JxWCI37Q85eD17phHYmx+6TxFMjQ4JzUtlTvttj6XdUpv419GLbWKfSBg2KRMjEM6PkoNGfYNa+4XCgDkUrNufAWLOUYnLRw3b+nU9CERorzk1ao8F9lBVBRDkSRWpeLS9Fel4HWnRnW6P+DHFtxmE4Bbmgi/d9CwM0BtvbdGsV4IxipR0IQ1kxAZ/vp+QMueF/3t80UhkriE0ynS4HJG5vCloLKjh3Er6pbYlDGFL1W5x0v6nszpuNc1rTXBDgBI0vDR50nL+O9ftdj76bs42TajERqkfYdWOn4HpLTJZDadB0V7V1K2kV2M3i3Ct2ITLhpgIkFi56IM4z0nTUlRLz497N1JNcajwQpSRQBiCum6x342iGi8FC88OV+nIUNMWjEhsglP+TPSulx8L3gTQwSaxJzIi3piSbUl+6xEpNGz/A1L+Q4+D8pb5gLj+hRkPBhYukngU25gJQicf/g8xuSsLOhhVEFuDSdflQRQlvS7Ucym8hnwPCCtc+lVIyQv7pOFPM7Wm+Oc2ipDoCHlVO0T8a1tcLKnX+bWCAhwcYWiVqub/Z9JEU48ZaVTSgsC6KH4gIppbwf+IANRAQGZrSnaVr1Ppti6JhpQDSsNKnZkDVgya8IagklYBZLIaCSd19AJ9RiRlxJV4GbisbC8fFPAJADm0Fa5gfbAJUMIHCTKaYgnMxHdsQvFUS4Kzcs2P+W4CVm8nOeWP4HxLA18mxqS17siUaxC4QmMk4LUPWOf9mF3Wm1RysFXgGkZxZ80FbSsUYR/yDcwlpJIt9NbPKU6qyJ2TK0KzNvptKRUqN/26mL59MLplQT+vk7meKLw2ijcPq6p5S5Fv93246FiJfhd0rHL7qE/nQij1wpKl7Ko9sgIqTGnSOfuRwOw2cWZzCQ+jIka8DmFKO4vtktRE9TaQ2mtWN+hjcVGtZNAaFInp3TjkGkA6zhdFNp0N4fmIXcHqxFRI+Yz6hEvJ8COxSNwdSQpbYtYe7hnRSS/rbWznzeX4AMXSKIOhEJBjVUs8giERvQV/RuKCwKJsDcYuagErpLV8sFOZMEkA1ZLf7dgNg/JSxqaGDMdRfiDE3z4SrnSYxc9kWRX1xBt7coG0wmTtr3rwOhY7jbkq6r5PE6qzVoISycjAFje48B0hiSS2UKBynl3oO62x9fX5W0QshyTzND/7a83FTcEzfAiBslc5HFqCdA7CfzpcqeWc20MzB90E0eZb4K29S1/ts+7PzVWj/o63UTD8IPWCpDJuAI0OmHgPhRSA5m6LqNNkBWvLssnkx9wO8lEN3825bKFX5XkfGa40LARYrqOopBc/zei/f+2y//uC0/e2sdLaW0EUIWzQkRSHjWhehn+XqTdhEsu4DG7Z+LAgI+OtRns38Vrzn1xSkIbtbbrueEXBz0J196FpeRPZ9K6DRkhmt313OzspfA5/V+GPP6EvUbHwaCIafK5v9ZwteyXDolu/iSbyL4HpFx3sHnFlRMBel1URf7BywzBgScJSH5zo3bx8VKNH/pnfCWakJon2JSsSiCgq0rKPWJePcf1jlPwhCmv8LXf/X91uycWsVZ/mq82fWTeX4kWC9sxASEL49PHHHNEm8TnJVA55MLx7vwm68LbrZ7xz08upIQYh6Ppa7VChj4sMJwi6w37d08zO/Hhhw+/ilUsjWi8Shw8ejSRarLjDb6Wb9yiy6MisXUsDrbix9X6yIsrjXJO/PhCYgUQx6drk9hxiMYIj0gbcQaHT+Uig3GvulA6qTHhqF7gB627NUcFiTy2X/o+BgeQSFkvbE0Wn2K9dlfM7n3iB+836TS06R6IqEHIu1+nhGYmiSgctwHIdGMzc9blE0/ti1RLG3Evy+mkuEY6aOKVaoIBVrWJAkX+rIBqBhUq+r4rYJY4xKhnRtGTR8+LjYEbDqm77EDOU9BStHJKixZ6FNfwjIJBgZw5iUwl7RkrwbBrPRsfkLBpVYmSvZmZEw6JbSwELagLMFzqM6WNNZmRkZt5YZX4rqM1N07YYXoXso7jwj7ZAbRaxUDUNL9rMctEQtpg6gEu5M0viZsgnkw0gaTsPUMpNi2ppiqKh+zV2F140vSIPNe0xLuL6ZX0rsRDrJduq5z41UDiOSh4G/XSkWEgXHdNxBI1TFcB4B1X5gtGol++X0D73SSltKzmd2gRlS2zStM/Qekw+ldKP9dUsVD3LDEVcnj8sWNm2mGQP3zQhtP4CqlIUKG+rSljnnPV5rd1ZuP3zt47cCJCKQ6uZDEnZ715/s82WLQR0SocVdWJ3gSffkkCgk24i2q2hsrHQxyHd35sHMxgc8EYZ4jnOro8enJxvYEX5ISsPQR80PGY4XpuurYdrgHrwwA6oor7ItnqRpCYTiEPfQrFoBgMjACMDAACKTKLGNNxeJWNtFd/B0Sv+ILUrMrwU0eaEgBmyyopV+BcrmcGbXHyLydfJ+hCgAAAoBt5DjfrCSQMNb8nJ4X98OUd+umitX4UiMf6EAGH9uwu/he7X1jN9IYiyHFJEPmt+BKH26ZU25GRFH5+9LmiVcZIWZLqmO9lIKVHgMzFu1NOap/a2FnXSIebj1vrpU4AAxYH/uiZPnbDR3gEN7b5MzqmLYsOmfkXYFhiN11a6efnCU2t4PSkEJoy6V5Nris5/M+NE334d1Pb1A5FICfpKb5oO+cO0yE2sGCrcBRMeGQTloJbvN88ECW7JasNLg9lP4fhaFU2rLPssi+cyhuXgRAEnAteSZT3wAnGUhCTGz3BzJ5fxA5S1tlLIsMIfoYY1i40TKg4L5Vh/r2wxAalpsMY1+2INGY0dSjc3CADsmiLERWsRIXasXl2fjFOIJP1UzsAtBG7RcM7P/IgNLo7geE+ziKueMmzAbhoSx2IuJEze+imQh+A3OE/PIP8DLf71Fm4ZTLpNKNXBPPMjzQylGBXhTXUJumzfxkQHyeTQUYezVkzoWHW5usRs+JZbgBDfM/ZoWi0hBReW5BIVJXRrmcuf6E0mENSa7nV9wjY9sCP/6AYYqxV90yTYA8qIUVQE9a/vN2xOpNjeOIdapTpS8soDEuWdLwEBSXbW8BQmZYW4l8wNg+TqeLf96nQOO/Wb+/F9FLXEdeMLC6X0aYp4ql8dn/VjYJbFFMA9BeXftIXKbGNUF5sqvCyDWW0LWPCcDXOLBexRwXNT4zKLMN2wafQKBxZVfRi4F3JqzREoDa37VYwOdn0OrtJzGq863fpr2wF9oYthWRSRWWeRg2gkRtLMZPOU5eItGIlb7jeG4c3Rd8u0tlzD06d/3fpriTQUGF/5wXEcR8Dbnd+ALDQ4o5I3gZpliB2RpQ170BOfUFnJkcb1+S0rr9j6e/luBBrUx/abxxorMLSI1OGUk8aM87WmJqCbUc43HgNNA94n7wANi6ZLaTg7MHD82kiIviYj41FRo5fG8dynGc/GOapLYvPnOOT2Axkep/4LIAg3aPAFnn2bv3GVqDOW5Nrh5Ym3h4LCiOIyWfQlg/ieGuhumrqW768MTinoR/7CoVdSTW7FQchkB3QuXR5PipTOFvgzkc7iKLoe5gx+cVadblEq34/euFyHNThz8xSuGBswKiNjCIB235sLSqgccP5outYAlz0U64E7y6Oj38oACw0wesQ/a7OSJ5QqRgWjRpgianyy87oRXQQ5nqiizamXwcScCOZrcJb2rd0559Jh6qXI1gl1vySMwrH+L6xhYWqfbNQXVMt+4uqixWyqvKD1nj99TaW0O3mCWIjr5/fxXMHfUA9Y9ex72hEC5CvADTNhCpxfl6hb7UHnsh7FA2l6fabf8XvtIe5t5qDNxIAXuFHU4l9w0+phmjbsVfNss6N/wj1dMtNuWtdT79Ih+gxuP+wuxfTMYTKoCtUBYdpcGHjrAYLvODCoGempzyAqs7tMz70fcLe9vfTOZAuIPbeLf6+R4Pc+HAL3ExI8ajpTrswlVPy+X3ivnMW7a6fjHQaPItckTi/o/dZzviL7icbIUcCdNd5vWYztmV5IMLExaluLlUlsbfDCqrsDjci2qI5SXaNHz6K7g9078i2f8tWnj798egAD2xI+sRpTDI2vrup65cGI8I1n8Su57G8A1O4LCZ+oTHb/QXoF37hmm2ce3xYzrcvM1qFmTofdnUx3RzytLgKm/BDrK30QjpTLs1CUONbWeaCuj274f1V23g/lPf3zdp3SAJorL1FKtkXxhDVrnhAd5HVWtJ0d9SK+kDZXfTuK9VtfeAfkW9QRewT20AVTGPwQPN5OaYOf/vGZTzCLnUekN90HFi+RUnsdXkBNtjbX1iQPGk7m7uVJ564+pjcIda5qt2oczFn9fr2bhL4YxK4D+i2+BkZGAPsdsSKFCQbUyLeax6rqPU6bt8nOBYii3xpbBgBIABg8UhDt8vblYuet4XyU5W1ixIwiZ5j7hAHD2yiHJvbMcE07D1pmvh7HYS+21kDwgnZp5tpn0tYrYMwWAw8fH1wiD40ef4M7jR5tX5Qc+0PzdrW5+3jdp6qwK7NkrFBzwJM/mcvvswAC5WbZH4+u/LG2mWFBXhr4/6b0BtEoAARCeBQIkAsJ4YEmTHt4ZbGPisSRcNnuKDDk8ggHOQODFPQVSzXBzY6vMkHE+jNPVAgo5AOflWuNHuJDidIHvpMQ5VFWZlspwCnCABM8K+Nl4CorCiKXHOU6ZxDBsso5IqzMGzPRJEYeq1YNGzM5WFxmoeGUAjKnLYmgcoJsr65EK5HdIGR7TlXzgqZLXhHFyLyDcTmv0XzMuyRJxqf20OJzEB0DVAbKC9G0zisS6Zl3qG5iXhPN87xLTt+me0RLAbVCU8Aw1S1oxdoayCiko8KMCF9EoBijhk6snoxQe4P0Z/H3ZO3rWPiX/PwAa3SyPU3YflB/C911MUA5dL8GlIMGrC4G6am9/vgCRh8PoT56G1g2+uvCtnvUEnxGRXEIJp07UFZxFQrWt6EIPj2ugO+nfxdrIiV8U9E0VZxPBWWLVygeYSy6F9Ck0d8A3Vp9j+GLUtAaYk34x3HfD0okyf6+ierKQCheNf7+AvMTlIHhBEkxWWwOl+YBiDChjAuptGnZjhsL5d8g2+dFGvmhh1GcpFlelFXdtF0/jNO8rNt+nNf9vN+PmQ1RcU4awnYHjXzvIjrKapuuD4GOUp1Csx4bK+GkulbT+1Y09tJNcjLMVnQ015ob1l2VV4lt07i34VZ8m6NabPqAeVFKvpYtrz3D2dFND7301Ntah/rpe3UJBhkYvyX3ytHAsGRgVJI7SqZGx/PxorT4/2C/k242bWpmbmFpZd0KM7Z2lKa0wwLN3sHRydnF1c29Tc235NkWy2ALW2SVwWSxOVweXyCEYEQklkhlcoXSh09fvv349ecfBkcgUWgMFocnEElkCpVGZzBZbA6XxxcIRWKJVCZXKFVqjVanNxhNZovVZnc4XW6P1+cPBEPhSFRIpY11PsTkvDdjEHLrvF/alAEXKJU2TMtJN6tQBlygVNowLdtJV+YSyoALlEobpmU76eYWyoALlEobpmU76eYhfd3qNAyf9jMGYQgo1TFTtqG49ub4beO4mgpGN6zgNBXn8QfGJIkbYEQlgNa5neyNgDohJiff//TjBoQGDLK/8n6ImZgp4EAc4yLY3jSz2s4Ij7uPa72aThy+Hu2E8ZvlTPYNJOJtmJiHfGDaXxzr32IbIxCIXwe2HzRwQviaAbM6bJt4gv6dSrGZRwx9h3DKf1PZ/SAl66cwZZVRQ3gnp+V6ICw8KjoYKXIbuelFR1luddG0UNGddA821xZRQxqJ5ZbMbZtvNBgC821DtdZWEhEkRceHLub8LqnZDHZLJ91KyjQJ49iTV0sx+4AfA+kEruTDVgKLrMapPJP+fVTLJpVvM4ZPevDVJpZKG6ZlOyv3DSD6G8QlPWmaJL7nrmNTT5lv/LBjZ4SsTMqzsaphoNUl5Yzh3cCiv8z0S3rSqAA0q5vkLl8X5V+/v5P0zHrq1WMUeCmuCHmTaK6dwJxj0W64dfOWZIiOQjr1fnpBJQQYeSdi5zQVEHSWifradXlK9m/s0k4Qz1k56wYt/R4G/P6hPkbVv3/XBg==)format("woff2");font-display:block;font-style:normal;font-weight:400}
+  </style>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000000;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    #shanghai-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: crosshair;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="shanghai-canvas" aria-label="上海外滩与陆家嘴 12 层 ASCII 城市天际线" title="移动鼠标体验 12 层景深视差 · 点击任意位置重播字符雨入场"></canvas>
+
+  <script>
+    // =========================================================================
+    // 1. 12-LAYER SHANGHAI SCENE GENERATOR (259x96 Grid: x in [-129,129], y in [-48,47])
+    // =========================================================================
+    const MIN_X = -129, MAX_X = 129, MIN_Y = -48, MAX_Y = 47;
+    const BOUNDS = { minX: MIN_X, maxX: MAX_X, minY: MIN_Y, maxY: MAX_Y };
+
+    function charWidth(ch) {
+      if (!ch) return 1;
+      const cp = ch.codePointAt(0);
+      return (
+        (cp >= 0x1100 && cp <= 0x115f) ||
+        (cp >= 0x2e80 && cp <= 0xa4cf && cp !== 0x303f) ||
+        (cp >= 0xac00 && cp <= 0xd7a3) ||
+        (cp >= 0xf900 && cp <= 0xfaff) ||
+        (cp >= 0xfe10 && cp <= 0xfe19) ||
+        (cp >= 0xfe30 && cp <= 0xfe6f) ||
+        (cp >= 0xff00 && cp <= 0xff60) ||
+        (cp >= 0xffe0 && cp <= 0xffe6)
+      ) ? 2 : 1;
+    }
+
+    class AsciiLayer {
+      constructor(slot, name, depthRate, desc) {
+        this.slot = slot;
+        this.name = name;
+        this.depthRate = depthRate;
+        this.desc = desc;
+        this.visible = true;
+        this.cells = {};
+      }
+      set(x, y, ch, ink = false) {
+        x = Math.round(x);
+        y = Math.round(y);
+        if (x < MIN_X || x > MAX_X || y < MIN_Y || y > MAX_Y) return;
+        if (!ch || (ch === " " && !ink)) {
+          delete this.cells[`${x},${y}`];
+          return;
+        }
+        const w = charWidth(ch);
+        if (x + w - 1 > MAX_X) return;
+        delete this.cells[`${x},${y}`];
+        if (w === 2) delete this.cells[`${x + 1},${y}`];
+        const prev = this.cells[`${x - 1},${y}`];
+        if (prev && charWidth(prev.char) === 2) delete this.cells[`${x - 1},${y}`];
+        this.cells[`${x},${y}`] = { char: ch, ink };
+      }
+      text(x, y, str, ink = true) {
+        let cx = Math.round(x);
+        for (const ch of [...str]) {
+          const w = charWidth(ch);
+          this.set(cx, y, ch, ch === " " ? ink : false);
+          cx += w;
+        }
+      }
+      stampSolid(x, y, lines) {
+        for (let dy = 0; dy < lines.length; dy++) {
+          const chars = [...lines[dy]];
+          let first = -1, last = -1;
+          for (let i = 0; i < chars.length; i++) {
+            if (chars[i] !== " ") {
+              if (first === -1) first = i;
+              last = i;
+            }
+          }
+          if (first === -1) continue;
+          let cx = Math.round(x);
+          for (let i = 0; i < chars.length; i++) {
+            const ch = chars[i];
+            const w = charWidth(ch);
+            if (i >= first && i <= last) {
+              this.set(cx, y + dy, ch, ch === " ");
+            }
+            cx += w;
+          }
+        }
+      }
+    }
+
+    function buildShanghaiScene() {
+      const L1 = new AsciiLayer(1, "天空-朝阳-云层", 0.05, "顶部点阵天幕、浦江朝阳与流云江鸥");
+      const L2 = new AsciiLayer(2, "上海中心大厦-最远", 0.10, "632m 螺旋上升幕墙与浦西远景高楼");
+      const L3 = new AsciiLayer(3, "环球金融与金茂", 0.15, "开瓶器梯形风洞与金茂宝塔阶梯");
+      const L4 = new AsciiLayer(4, "东方明珠电视塔", 0.22, "太空舱、上下球体与三柱斜撑底座");
+      const L5 = new AsciiLayer(5, "陆家嘴与震旦大屏", 0.32, "I♥SH 巨幅屏幕、中银大厦与科创楼群");
+      const L6 = new AsciiLayer(6, "外滩万国建筑群", 0.42, "江海关大钟楼、和平饭店与浦发穹顶");
+      const L7 = new AsciiLayer(7, "黄浦江水波倒影", 0.52, "江面波光纹理与两岸建筑灯光倒影");
+      const L8 = new AsciiLayer(8, "浦江游轮与渡轮", 0.62, "「浦江游览」游船与「沪渡」过江轮渡");
+      const L9 = new AsciiLayer(9, "外白渡桥与高架", 0.72, "百年钢桁架外白渡桥与磁浮轨道桥");
+      const L10 = new AsciiLayer(10, "高速磁悬浮列车", 0.76, "430 KM/H 流线型磁悬浮列车");
+      const L11 = new AsciiLayer(11, "武康路与石库门", 0.88, "武康大楼转角、上海咖啡、生煎与沪A老爷车");
+      const L12 = new AsciiLayer(12, "近景露台与梧桐", 1.00, "法国梧桐树冠与眺望江景的创客露台");
+
+      // L1: Sky dithering, Sun, Clouds & Seagulls
+      for (let x = -128; x <= 128; x++) {
+        L1.set(x, -48, ".");
+        L1.set(x, -47, ".");
+        if (x % 42 !== 0) L1.set(x, -46, ".");
+        L1.set(x, -45, ".");
+        if (x % 2 === 0) L1.set(x, -44, ".");
+        if (x % 3 === 0) L1.set(x, -43, ":");
+        else if (x % 2 === 1) L1.set(x, -43, ".");
+        if (x % 8 === 0) L1.set(x, -42, ".");
+        if (x % 29 === 0) L1.set(x, -42, "°");
+      }
+      const skyStars = [
+        [-120, -40, "°"], [-105, -41, "°"], [-88, -39, "·"], [-74, -41, "°"], [-55, -40, "·"],
+        [-38, -41, "°"], [-18, -39, "°"], [5, -41, "·"], [22, -40, "°"], [45, -39, "°"],
+        [78, -41, "·"], [96, -39, "°"], [115, -40, "°"], [-112, -31, "·"], [-78, -29, "°"],
+        [-28, -28, "·"], [2, -33, "°"], [48, -32, "·"], [88, -28, "°"], [122, -34, "·"]
+      ];
+      for (const [x, y, c] of skyStars) L1.set(x, y, c);
+
+      L1.stampSolid(-68, -39, [
+        "            .      |      .            ",
+        "        . \\     .......     / .        ",
+        "          `  .d8#######8b.  '          ",
+        "         `·.d8############8b.·´        ",
+        "     .     d8################b     .   ",
+        "          o8##################8o       ",
+        "      '· o#####################o ·'    ",
+        "     ·-- o#####################b --·   ",
+        "      .· o8###################§o ·.    ",
+        "          d8##################§        ",
+        "           .d8##############§.         ",
+        "         ,   .d8#########8b.   .       ",
+        "        ' /     ¨¨¨¨¨¨¨¨¨     \\ `      ",
+        "                    |                  "
+      ]);
+
+      L1.stampSolid(-126, -36, [
+        "      ._.-.        ",
+        "     (  . .-.'-.   ",
+        "   .-'. . . . . )  ",
+        "  ( .:.:.:.:.:.'--.",
+        "   '-'-'-'-'-'-'-''"
+      ]);
+      L1.stampSolid(-104, -39, [
+        "          .-´‾`-.            ",
+        "       .-´       `-.         ",
+        "  .-´`'!_(    .     |        ",
+        " ,-´        .  . .   ~-.     ",
+        "._(  . . .   :. .:. .   )    ",
+        " ( ..: :.:.:.:..:::.:.:.'--. ",
+        "  '-'-'-'-'-'-'-''-‾.::_¡-'-'"
+      ]);
+      L1.stampSolid(-8, -37, [
+        "      __.-.         ",
+        "    .'     )        ",
+        "   ( .  .  `-.      ",
+        " .-.`. . . . .)     ",
+        "( .. .:.:.:.:.`-.   ",
+        " `--'-'-'--'-'--'   "
+      ]);
+      L1.stampSolid(74, -38, [
+        "          .-´`'!_           ",
+        "       ,-´       `·         ",
+        "    ._(   . . .   .-.       ",
+        " .,./  . . . . . .. . )     ",
+        "( ....:.: :.:.:.:..:.:'--.  ",
+        " ···-¨'-'-'-'¨¨-'-''-'-''   "
+      ]);
+      L1.stampSolid(103, -31, [
+        "       .-._.      ",
+        "    .-'.-. .  )   ",
+        "   ( . . . . .'-. ",
+        ".--' .:.:.:.:.:. )",
+        "~-''-'-'-'-'-'-'-'"
+      ]);
+      L1.stampSolid(-46, -22, [
+        "     .-._        ",
+        "   / .  :-.-.    ",
+        " .´ . . .  . )   ",
+        "( :::::::::.:'--.",
+        " ¨'-'-'-'¨¨-'-''~"
+      ]);
+      L1.text(-42, -14, "\\v/", false);
+      L1.text(-35, -16, "~v~", false);
+      L1.text(-49, -12, "`v´", false);
+      L1.text(-29, -10, "\\v/", false);
+
+      // L2: Shanghai Tower (632m) & Distant Puxi Towers
+      L2.stampSolid(-115, -14, [
+        "    .¡===¡.    ",
+        "  .´|| | ||`.  ",
+        "  |=========|  ",
+        "  |||  |  |||  ",
+        "  |||  |  |||  ",
+        "  |=========|  ",
+        "  |||  |  |||  ",
+        "  |||  |  |||  ",
+        "  |=========|  ",
+        "  |||  |  |||  ",
+        "  |||  |  |||  ",
+        "  |=========|  ",
+        "  |||  |  |||  ",
+        "  |||  |  |||  ",
+        "  |=========|  ",
+        "  |||  |  |||  ",
+        "  |||  |  |||  "
+      ]);
+      L2.stampSolid(-58, -12, [
+        "      /|\\      ",
+        "     / | \\     ",
+        "    /  |  \\    ",
+        "   |=======|   ",
+        "   |·:·|·:·|   ",
+        "   |·:·|·:·|   ",
+        "   |=======|   ",
+        "   |·:·|·:·|   ",
+        "   |·:·|·:·|   ",
+        "   |=======|   ",
+        "   |·:·|·:·|   ",
+        "   |·:·|·:·|   ",
+        "   |=======|   ",
+        "   |·:·|·:·|   "
+      ]);
+
+      L2.set(59, -44, ":");
+      L2.set(59, -43, "|");
+      L2.text(57, -42, ".¡|¡.");
+      L2.text(55, -41, ".´|| ||`.");
+      L2.text(54, -40, "|| || || |");
+      for (let y = -39; y <= 18; y++) {
+        const progress = (y - (-39)) / 57;
+        const leftX = Math.round(53 - progress * 3);
+        const rightX = Math.round(64 + progress * 4);
+        const width = rightX - leftX;
+        for (let x = leftX; x <= rightX; x++) {
+          if (x === leftX || x === rightX) L2.set(x, y, "|");
+          else if ((y + 40) % 7 === 0) L2.set(x, y, "=");
+          else {
+            const grooveX = leftX + 2 + Math.floor(((y + 45) * 1.35) % Math.max(1, width - 3));
+            if (x === grooveX) L2.set(x, y, "\\");
+            else if (x === grooveX + 1) L2.set(x, y, ":");
+            else if ((x - leftX) % 2 === 0) L2.set(x, y, "¡");
+            else L2.set(x, y, "·");
+          }
+        }
+      }
+      ["上", "海", "中", "心"].forEach((ch, idx) => L2.set(58, -22 + idx * 4, ch));
+
+      // L3: SWFC & Jin Mao Tower
+      for (let y = -37; y <= 18; y++) {
+        const leftX = 28, rightX = 45;
+        if (y === -37) {
+          L3.text(leftX, y, "¡================¡");
+        } else if (y >= -36 && y <= -31) {
+          const dy = y - (-36);
+          const gapHalf = dy < 3 ? 2 + dy : 5 - (dy - 3);
+          const mid = 36.5;
+          for (let x = leftX; x <= rightX; x++) {
+            if (x === leftX || x === rightX) L3.set(x, y, "|");
+            else if (Math.abs(x - mid) < gapHalf) {
+              if (y === -31) L3.set(x, y, "=");
+              else if (y === -36) L3.set(x, y, "_");
+              else L3.set(x, y, " ", false);
+            } else if (Math.abs(Math.abs(x - mid) - gapHalf) < 1) {
+              L3.set(x, y, y < -33 ? (x < mid ? "\\" : "/") : (x < mid ? "/" : "\\"));
+            } else {
+              L3.set(x, y, "!");
+            }
+          }
+        } else if (y === -30) {
+          L3.text(leftX, y, "|================|");
+        } else {
+          for (let x = leftX; x <= rightX; x++) {
+            if (x === leftX || x === rightX) L3.set(x, y, "|");
+            else if (x === leftX + 1 || x === rightX - 1) L3.set(x, y, "!");
+            else if ((y + 30) % 6 === 0) L3.set(x, y, "-");
+            else if ((x + y) % 3 === 0) L3.set(x, y, ":");
+            else L3.set(x, y, "|");
+          }
+        }
+      }
+
+      L3.set(15, -32, "|");
+      L3.set(16, -32, "|");
+      L3.text(14, -31, "¡==¡");
+      L3.text(13, -30, "¡====¡");
+      L3.text(12, -29, "|!||!|");
+      L3.text(11, -28, "¡======¡");
+      for (let y = -27; y <= 18; y++) {
+        const tier = Math.floor((y + 27) / 6);
+        const halfW = Math.min(7, 4 + Math.floor(tier / 2));
+        const cx = 15;
+        const lx = cx - halfW, rx = cx + halfW + 1;
+        for (let x = lx; x <= rx; x++) {
+          if ((y + 27) % 6 === 0) L3.set(x, y, x === lx || x === rx ? "¡" : "=");
+          else if (x === lx || x === rx) L3.set(x, y, "|");
+          else if (x === cx || x === cx + 1) L3.set(x, y, "|");
+          else if (x % 2 === 0) L3.set(x, y, "_");
+          else L3.set(x, y, "|");
+        }
+      }
+
+      const farRightTowers = [
+        { x1: 72, x2: 86, y1: -24, y2: 18, style: "grid" },
+        { x1: 89, x2: 103, y1: -18, y2: 18, style: "stripe" },
+        { x1: 106, x2: 124, y1: -12, y2: 18, style: "dots" }
+      ];
+      for (const t of farRightTowers) {
+        for (let y = t.y1; y <= t.y2; y++) {
+          for (let x = t.x1; x <= t.x2; x++) {
+            if (y === t.y1) L3.set(x, y, x === t.x1 || x === t.x2 ? "¡" : "-");
+            else if (x === t.x1 || x === t.x2) L3.set(x, y, "|");
+            else if (t.style === "grid") L3.set(x, y, (x + y) % 2 === 0 ? "+" : "·");
+            else if (t.style === "stripe") L3.set(x, y, x % 2 === 0 ? "|" : ":");
+            else L3.set(x, y, y % 2 === 0 ? "=" : "·");
+          }
+        }
+      }
+
+      // L4: Oriental Pearl Tower
+      const px = -16;
+      for (let y = -45; y <= -33; y++) {
+        if (y === -45) L4.set(px, y, ":");
+        else if (y < -41) L4.set(px, y, "|");
+        else if (y === -41) L4.text(px - 1, y, "¡|¡");
+        else L4.text(px - 1, y, "|||");
+      }
+      L4.stampSolid(px - 3, -32, [
+        " .d88b. ",
+        "(8####8)",
+        " `Y88Y' ",
+        "  ||||  ",
+        "  ||||  "
+      ]);
+      L4.stampSolid(px - 9, -27, [
+        "    .d8#####8b.    ",
+        "  .d8#########8b.  ",
+        " d8#############8b ",
+        "o8 ===  ###  === 8o",
+        "o8###############8o",
+        " d8#############8§ ",
+        "  `Y8#########8§'  ",
+        "    `Y8#####8§'    "
+      ]);
+      for (let y = -19; y <= -5; y++) {
+        if ((y + 19) % 3 === 1) L4.text(px - 5, y, "||===(o)===||");
+        else L4.text(px - 5, y, "|| |  |  | ||");
+      }
+      L4.stampSolid(px - 14, -4, [
+        "       .d8#########8b.       ",
+        "    .d8###############8b.    ",
+        "  .d8###################8b.  ",
+        " d8#######################8b ",
+        "o8 === === === === === === 8o",
+        "o8##### 东 方 明 珠 #######§o",
+        "o8 === === === === === === §o",
+        " d8#######################8§ ",
+        "  `Y8###################8§'  ",
+        "    `Y8###############8§'    ",
+        "       `Y8#########8§'       "
+      ]);
+      for (let y = 7; y <= 18; y++) {
+        const dy = y - 7;
+        L4.text(px - 2, y, "|| ||");
+        const lx = px - 5 - dy;
+        L4.text(lx, y, "//");
+        const rx = px + 5 + dy;
+        L4.text(rx, y, "\\\\");
+        if (dy % 3 === 0 && dy > 0 && dy < 10) {
+          for (let x = lx + 2; x < rx; x++) {
+            if (x < px - 2 || x > px + 2) L4.set(x, y, "=");
+          }
+        }
+      }
+
+      // L5: Lujiazui & Aurora Screen
+      L5.stampSolid(-3, 2, [
+        "  ¡=============¡  ",
+        " ¡===============¡ ",
+        "|=================|",
+        "||\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"||",
+        "||  I  ♥  S H    ||",
+        "||  -----------  ||",
+        "||   中 国 魔 都 ||",
+        "||   2 0 2 6     ||",
+        "||\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"||",
+        "||_|_|_|_|_|_|_|_||",
+        "||_|_|_|_|_|_|_|_||",
+        "||_|_|_|_|_|_|_|_||",
+        "||_|_|_|_|_|_|_|_||",
+        "||_|_|_|_|_|_|_|_||",
+        "||_|_|_|_|_|_|_|_||",
+        "|=================|"
+      ]);
+      L5.stampSolid(-41, 1, [
+        "    /|\\         ",
+        "   / | \\        ",
+        "  ¡=====¡       ",
+        "  | \\ / | ¡====¡",
+        "  |  X  | |[][]|",
+        "  | / \\ | |[][]|",
+        "  |=====| |[][]|",
+        "  | \\ / | |[][]|",
+        "  |  X  | |[][]|",
+        "  | / \\ | |[][]|",
+        "  |=====| |====|",
+        "  | \\ / | |[][]|",
+        "  |  X  | |[][]|",
+        "  | / \\ | |[][]|",
+        "  |=====| |====|",
+        "  |_|_|_| |[][]|",
+        "  |_|_|_| |[][]|"
+      ]);
+      L5.stampSolid(42, 8, [
+        "   :--------------------:     ¡==========¡   ¡------------¡   ¡-----------¡",
+        "   |  muSHANGHAI 2026^  |     ||`:,:`:,:||   |  张 江 科 创|   | 东 方 明 珠|",
+        "   |--------------------|     ||:不:`:,:||   |------------|   |-----------|",
+        " ¡========================¡   ||`:,夜:`:||   | [][][][][] |   | |!|!|!|!| |",
+        " || ######  ##  ##  #####||   ||`:,:城:,||   | [][][][][] |   | |!|!|!|!| |",
+        " || ##      ##  ##  ##   ||   ||`:,:`:,:||   | [][][][][] |   | |=======| |",
+        " ||  ####   ######  #### ||   ||========||   | [][][][][] |   | |!|!|!|!| |",
+        " ||     ##  ##  ##  ##   ||   ||  浦  东||   | [][][][][] |   | |!|!|!|!| |",
+        " || #####   ##  ##  #####||   ||  新  区||   | [][][][][] |   | |=======| |",
+        " |========================|   ||_:_:_:_:||   |____________|   |_|_|_|_|_|_|"
+      ]);
+      for (let x = -42; x <= 128; x++) {
+        L5.set(x, 18, "=");
+        L5.set(x, 19, x % 4 === 0 ? "¡" : "-");
+      }
+
+      // L6: The Bund Historical Buildings
+      L6.stampSolid(-127, 3, [
+        "            .---.            ",
+        "         .-´:::::`-.         ",
+        "       .´:::::::::::.        ",
+        "      |===============|      ",
+        "   ¡=====================¡   ",
+        " ¡=========================¡ ",
+        " |  [I]  [I]  [I]  [I]  [I]| ",
+        " |=========================| ",
+        " | ||| ||| ||| ||| ||| ||| | ",
+        " | ||| ||| |外| ||| ||| ||| | ",
+        " | ||| ||| |滩| ||| ||| ||| | ",
+        " | ||| ||| |12| ||| ||| ||| | ",
+        " |=========================| ",
+        " | |∩| |∩| |∩| |∩| |∩| |∩| | ",
+        " |_|_|_|_|_|_|_|_|_|_|_|_|_| "
+      ]);
+      L6.stampSolid(-96, -2, [
+        "         ¡^¡         ",
+        "         |||         ",
+        "       ¡=====¡       ",
+        "      | .---. |      ",
+        "      | |12 | |      ",
+        "      | |9+3| |      ",
+        "      | '---' |      ",
+        "      |=======|      ",
+        "     ¡=========¡     ",
+        "     |  || ||  |     ",
+        "     |  || ||  |     ",
+        "  ¡===============¡  ",
+        "  | 江 海 关 1927 |  ",
+        "  |===============|  ",
+        "  | ||| |===| ||| |  ",
+        "  | ||| | | | ||| |  ",
+        "  | ||| |===| ||| |  ",
+        "  | ||| | | | ||| |  ",
+        "  |===============|  ",
+        "  |_[I]_|███|_[I]_|  "
+      ]);
+      L6.stampSolid(-73, 2, [
+        "          /\\                 ",
+        "         /::\\                ",
+        "        /::::\\               ",
+        "       /::::::\\              ",
+        "      |========|    ¡=====¡  ",
+        "   ¡==============¡ |PEACE|  ",
+        " ¡==================|HOTEL|¡ ",
+        " |  和  平  饭  店  |=====|| ",
+        " |=========================| ",
+        " | |\"| |\"| |\"| |\"| |\"| |\"| | ",
+        " | | | | | | | | | | | | | | ",
+        " |=========================| ",
+        " | |∩| |∩| |∩| |∩| |∩| |∩| | ",
+        " | | | | | | | | | | | | | | ",
+        " |=========================| ",
+        " |_[ ]_[ ]_[███]_[ ]_[ ]___| "
+      ]);
+      for (let x = -128; x <= -42; x++) {
+        L6.set(x, 18, "=");
+        L6.set(x, 19, x % 3 === 0 ? "I" : "=");
+        if (x % 14 === 0) {
+          L6.set(x, 16, "¤");
+          L6.set(x, 17, "|");
+        }
+      }
+
+      // L7: Huangpu River Water & Light Reflections
+      for (let y = 20; y <= 27; y++) {
+        for (let x = -128; x <= 128; x++) {
+          const underPearl = x >= -24 && x <= -8;
+          const underAurora = x >= -4 && x <= 14;
+          const underTowers = x >= 28 && x <= 70;
+          const underBund = x >= -115 && x <= -48;
+          if ((underPearl || underAurora) && (x + y) % 3 === 0) L7.set(x, y, "=");
+          else if ((underTowers || underBund) && (x + y * 2) % 5 === 0) L7.set(x, y, "-");
+          else if ((x + y * 7) % 11 === 0) L7.set(x, y, "~");
+          else if ((x * 3 + y * 5) % 17 === 0) L7.set(x, y, "·");
+          else if ((x + y * 3) % 23 === 0) L7.set(x, y, ".");
+        }
+      }
+
+      // L8: Huangpu River Cruise & Ferry
+      L8.stampSolid(-36, 21, [
+        "           _..---.._     |¡               ",
+        "        ._| [][][][]|____||___            ",
+        "    .__|  | 浦 江 游 览  o o o|__         ",
+        "  \\==============================/        ",
+        "~~~\\____________________________/~~~~~~~~~"
+      ]);
+      L8.stampSolid(74, 21, [
+        "       .---.|_          ",
+        "   .___| 沪渡 |____     ",
+        "  \\====  o o o ====/    ",
+        "~~~\\______________/~~~~~"
+      ]);
+
+      // L9: Waibaidu Bridge & Elevated Maglev Viaduct
+      L9.stampSolid(-124, 23, [
+        "  .---------.         .---------.         .---------.  ",
+        " / \\ / \\ / \\ \\       / \\ / \\ / \\ \\       / \\ / \\ / \\ \\ ",
+        "|/  V   V   \\|======|/  V   V   \\|======|/  V   V   \\|",
+        "|------------|======|------------|======|------------|",
+        "   ||    ||            ||    ||            ||    ||   "
+      ]);
+      for (let x = -128; x <= 128; x++) {
+        L9.set(x, 28, "_");
+        L9.set(x, 29, "=");
+        L9.set(x, 30, "_");
+      }
+      for (let p = -110; p <= 115; p += 28) {
+        for (let y = 31; y <= 35; y++) L9.text(p, y, "|||");
+      }
+      L9.stampSolid(-26, 28, [
+        "¡-------------------------------¡",
+        "|  MUSHANGHAI  | 磁浮 430 KM/H  |",
+        "!-------------------------------!"
+      ]);
+
+      // L10: Shanghai Maglev High-Speed Train
+      L10.stampSolid(8, 25, [
+        "      __.--8‾==/‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|",
+        "  _.-'  [ ]   | |  o o o  o o o  |‾|  o o o  o o o  |‾|  o o o  o o o  |‾|  o o o  o o o  |‾|  o  |",
+        " (____________|_|________________|_|________________|_|________________|_|________________|_|_____|"
+      ]);
+
+      // L11: Wukang Mansion, Cafes, Shikumen & Street Vehicles
+      L11.stampSolid(-125, 31, [
+        "  ¡==================¡    ¡--------------¡    ¡--------------¡",
+        "  | 武 康 大 楼 1924 |    | 上海咖啡 CAFE|    | 老盛昌 生煎  |",
+        "  |==================|    |--------------|    |--------------|",
+        "  | [∩] [∩] [∩] [∩] |    |  _@__@__@__  |    | (鲜肉) (蟹粉)|",
+        "  | ___ ___ ___ ___  |    | :\\|/\\|/\\|/-: |    |  ____  ____  |",
+        "  ||   |   |   |   \\ |____|____|____|____|____|_|____||____|_|"
+      ]);
+      L11.stampSolid(42, 31, [
+        "  ¡----------------¡     ¡-----------------¡",
+        "  | 新天地 SHIKUMEN|     | 梧桐区 BUND 18  |",
+        "  |----------------|     |-----------------|",
+        "  |   .--------.   |     |  [] .---. []    |",
+        "  |  /  石库门  \\  |     |  |  | o |  |    |",
+        "  |_|___|____|___|_|_____|__|__|___|__|____|"
+      ]);
+      for (let x = -128; x <= 128; x++) {
+        L11.set(x, 37, "-");
+        if (x % 8 < 4) L11.set(x, 39, "=");
+        L11.set(x, 41, "_");
+      }
+      for (const tx of [-52, -12, 22, 92, 114]) {
+        L11.stampSolid(tx, 32, [
+          "  (:::::)  ",
+          " (:::::::) ",
+          "  `\\| |/´  ",
+          "    |||    ",
+          "    |||    "
+        ]);
+      }
+      L11.stampSolid(-76, 37, [
+        "   _________     ",
+        " //___][__\\\\____ ",
+        "|o _  沪A  | _ o)",
+        "'-(0)-------(0)´ "
+      ]);
+      L11.stampSolid(52, 37, [
+        "   o__   ",
+        " _,>/´_- ",
+        "(*) \\(*) "
+      ]);
+      L11.stampSolid(-2, 37, [
+        "  _o    _o ",
+        "  /|\\  /::\\",
+        "  / \\   / \\"
+      ]);
+
+      // L12: Foreground Rooftop Terrace & French Plane Trees
+      L12.stampSolid(-128, 38, [
+        "   ._.-~-.-.   .-._                    ",
+        " (::::..:.:.`-',L:`.   ._.-.           ",
+        "(.:::::::`.,:-!-`.- _.(:::::.)         ",
+        " (:::::: i'!,'.. .':. :,.' !/|         ",
+        "  `\\:::` i'-.`-._\\   :,.' `.!'i        ",
+        "     ||: !.. >_.-`:``.!'i  /_.-'       ",
+        "     ||!,'. :\\,  :( , . / ':'-._       ",
+        "     ||_\\  ._J|,l`-!L  ).7 ', ':       ",
+        "    _||_`:`__\\\\  \\ :\\\\(V/ `:/:_        ",
+        "   ! ! `. 7.--:l_:l  ||\\\\ _J\\  :       "
+      ]);
+      L12.stampSolid(-58, 38, [
+        "                            _o       `.            (_\\   ,\\________.-----------------------;`‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾",
+        "              \\ \\ \\\\\\_\\ \\  (::L       ` \\         / ¡====)\\_                    `===========`               ",
+        "               \\_\\ \\_\\\\ \\ \\ ¡i           \\       / / ¨¨¨\\ /        [o]             `=============`          ",
+        "                 \\ \\ \\ \\ \\ \\!!·           .      '|      )       _[||]_              `============`         ",
+        "                             \\             \\      /      |      |______|     ,------------------------------",
+        "                              \\   __________/ ·   :  :___|_       ||  ||    /‾‾‾‾‾                      _o  ",
+        "                       _..--==-=-=-=-= |=| =-=-=`-,·____\\ |=| =-=-=-=-==--.._                          V::)!",
+        "               __..--===-=-=-=-=-=-=-=-=- -=-=-=    || ||  - -=-=-=-=-=-=-=-=-===--..__               .//   ",
+        "        ..--==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-   \\ (!! !;      =-=-=-=-=-=-=-=-=-=-=-=-==--..           ``   ",
+        "     --==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=         {§ §§          =-=-=-=-=-=-=-=-=-=-=-=-==--               "
+      ]);
+      L12.stampSolid(86, 38, [
+        "          [==]        ._.-~-.-.        ",
+        "           ||       (:::::..:.:.)      ",
+        "           ||     (:::::::::::::::)    ",
+        "           ||    (:::::::,.-~-..:::)   ",
+        "           ||      `\\:::/'     `\\|/    ",
+        "           ||-.-`    |||        |||    ",
+        "        _  ||   o    |||        |||    ",
+        "       /:) ||  /:)   |||        |||    ",
+        "       |¡  ||  |¡   _|||_      _|||_   ",
+        "       '!  ||  '!  ' ` ' `    ' ` ' `  "
+      ]);
+
+      return [L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12];
+    }
+
+    // =========================================================================
+    // 2. MUSHENZHEN-COMPATIBLE RENDERER + SPRITES + THEMES
+    // =========================================================================
+    const THEMES = {
+      musz: {
+        bg: "#000000",
+        fg: "rgba(200, 190, 181, 0.62)",
+        scramble: "rgba(235, 225, 215, 0.85)",
+        highlightSlots: {}
+      },
+      bund: {
+        bg: "#06070b",
+        fg: "rgba(218, 186, 130, 0.68)",
+        scramble: "rgba(252, 211, 77, 0.9)",
+        highlightSlots: {
+          4: "rgba(245, 194, 107, 0.85)",
+          6: "rgba(234, 179, 8, 0.80)",
+          8: "rgba(186, 230, 253, 0.78)"
+        }
+      },
+      cyber: {
+        bg: "#040711",
+        fg: "rgba(148, 163, 184, 0.62)",
+        scramble: "rgba(56, 189, 248, 0.9)",
+        highlightSlots: {
+          2: "rgba(56, 189, 248, 0.72)",
+          3: "rgba(129, 140, 248, 0.72)",
+          4: "rgba(244, 114, 182, 0.88)",
+          5: "rgba(45, 212, 191, 0.78)",
+          10: "rgba(56, 189, 248, 0.92)"
+        }
+      },
+      paper: {
+        bg: "#f4f0e6",
+        fg: "rgba(38, 34, 30, 0.75)",
+        scramble: "rgba(120, 53, 15, 0.85)",
+        highlightSlots: {}
+      }
+    };
+
+    // Dynamic Horizontal Drift Velocity (cells/sec) per layer when Sprites are enabled
+    const LAYER_SPRITE_VELOCITIES = {
+      8: 2.8,   // Huangpu River Cruise & Ferry steaming right
+      10: -14.0 // 430 KM/H Maglev gliding left across the viaduct
+    };
+
+    const SCRAMBLE_CHARS = "!<>-_\\\\/[]{}=+*^?#%@·.:;'";
+    const TOTAL_REVEAL_MS = 2800;
+    const CASCADE_MS = 2000;
+    const BASE_DURATION_MS = 360;
+    const TICK_MS = 48;
+
+    function normalizeGlyph(ch) {
+      return ch === "‾" ? "¯" : ch;
+    }
+
+    function hashCell(slot, x, y) {
+      let r = Math.imul(x ^ 2654435769, 2246822507);
+      r ^= Math.imul(y ^ slot, 3266489909);
+      r ^= r >>> 16;
+      return r >>> 0;
+    }
+
+    function computeViewport(width, height, dpr, bounds) {
+      const rows = bounds.maxY - bounds.minY + 1;
+      const cols = bounds.maxX - bounds.minX + 1;
+      const cellHeight = Math.max(height / rows, width / (cols / 2));
+      const cellWidth = cellHeight / 2;
+      const visibleRows = height / cellHeight;
+      const centerX = (bounds.minX + bounds.maxX + 1) / 2;
+      const centerY = (bounds.minY + bounds.maxY + 1) / 2;
+      const bottomLimit = Math.min(bounds.maxY + 1, 48);
+      const focusY = Math.max(centerY, bottomLimit - visibleRows / 2);
+      return {
+        width,
+        height,
+        dpr: Math.min(2, Math.max(1, dpr || 1)),
+        cellWidth,
+        cellHeight,
+        worldWidth: cols * cellWidth,
+        originX: width / 2 - centerX * cellWidth,
+        originY: height / 2 - focusY * cellHeight
+      };
+    }
+
+    class LayerCache {
+      constructor(layer, viewport, theme) {
+        this.layer = layer;
+        this.viewport = viewport;
+        this.theme = theme;
+        this.settled = new Set();
+        let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+        const entries = Object.entries(layer.cells);
+        for (const [k, v] of entries) {
+          const [x, y] = k.split(",").map(Number);
+          const w = charWidth(v.char);
+          minX = Math.min(minX, x);
+          minY = Math.min(minY, y);
+          maxX = Math.max(maxX, x + w - 1);
+          maxY = Math.max(maxY, y);
+        }
+        this.bounds = entries.length ? { minX, minY, maxX, maxY } : { minX: 0, minY: 0, maxX: 0, maxY: 0 };
+        this.canvas = document.createElement("canvas");
+        const wPx = (this.bounds.maxX - this.bounds.minX + 1) * viewport.cellWidth;
+        const hPx = (this.bounds.maxY - this.bounds.minY + 1) * viewport.cellHeight;
+        this.canvas.width = Math.max(1, Math.ceil(wPx * viewport.dpr));
+        this.canvas.height = Math.max(1, Math.ceil(hPx * viewport.dpr));
+        this.ctx = this.canvas.getContext("2d");
+        this.ctx.setTransform(viewport.dpr, 0, 0, viewport.dpr, 0, 0);
+        this.ctx.font = `${viewport.cellHeight}px "jgs7", "PingFang SC", "Hiragino Sans GB", Menlo, monospace`;
+        this.ctx.textBaseline = "top";
+        this.ctx.imageSmoothingEnabled = false;
+      }
+
+      drawCell(ctx, ch, px, py, customColor) {
+        const glyph = normalizeGlyph(ch);
+        const w = charWidth(ch) * this.viewport.cellWidth;
+        ctx.fillStyle = this.theme.bg;
+        ctx.fillRect(px, py, w, this.viewport.cellHeight);
+        if (ch !== " ") {
+          ctx.fillStyle = customColor || this.theme.highlightSlots[this.layer.slot] || this.theme.fg;
+          ctx.fillText(glyph, px, py);
+        }
+      }
+
+      settle(item) {
+        if (item.slot !== this.layer.slot || this.settled.has(item.key)) return false;
+        this.settled.add(item.key);
+        this.drawCell(
+          this.ctx,
+          item.char,
+          (item.x - this.bounds.minX) * this.viewport.cellWidth,
+          (item.y - this.bounds.minY) * this.viewport.cellHeight
+        );
+        return true;
+      }
+
+      draw(targetCtx, offsetX, offsetY, wrapWidth = 0) {
+        if (!this.layer.visible) return;
+        const w = this.canvas.width / this.viewport.dpr;
+        const h = this.canvas.height / this.viewport.dpr;
+        const baseX = this.viewport.originX + this.bounds.minX * this.viewport.cellWidth + offsetX;
+        const baseY = this.viewport.originY + this.bounds.minY * this.viewport.cellHeight + offsetY;
+        targetCtx.drawImage(this.canvas, baseX, baseY, w, h);
+        if (wrapWidth > 0) {
+          targetCtx.drawImage(this.canvas, baseX - wrapWidth, baseY, w, h);
+          targetCtx.drawImage(this.canvas, baseX + wrapWidth, baseY, w, h);
+        }
+      }
+    }
+
+    class SkylineRenderer {
+      constructor(canvas, layers, bounds, themeKey = "musz") {
+        this.canvas = canvas;
+        this.layers = layers;
+        this.bounds = bounds;
+        this.theme = THEMES[themeKey] || THEMES.musz;
+        this.viewport = computeViewport(Math.max(1, window.innerWidth), Math.max(1, window.innerHeight), window.devicePixelRatio, bounds);
+        this.ctx = canvas.getContext("2d");
+        canvas.width = Math.max(1, Math.round(this.viewport.width * this.viewport.dpr));
+        canvas.height = Math.max(1, Math.round(this.viewport.height * this.viewport.dpr));
+        this.ctx.setTransform(this.viewport.dpr, 0, 0, this.viewport.dpr, 0, 0);
+        this.ctx.font = `${this.viewport.cellHeight}px "jgs7", "PingFang SC", "Hiragino Sans GB", Menlo, monospace`;
+        this.ctx.textBaseline = "top";
+        this.ctx.imageSmoothingEnabled = false;
+
+        this.caches = layers.map(l => new LayerCache(l, this.viewport, this.theme));
+        this.schedule = [];
+        const totalRows = Math.max(1, bounds.maxY - bounds.minY);
+        for (const layer of layers) {
+          for (const [k, cell] of Object.entries(layer.cells)) {
+            const [x, y] = k.split(",").map(Number);
+            const h = hashCell(layer.slot, x, y);
+            const normY = Math.min(1, Math.max(0, (y - bounds.minY) / totalRows));
+            const startMs = Math.round(normY * CASCADE_MS + (h % 141));
+            const durationMs = Math.min(BASE_DURATION_MS + (h % 261), TOTAL_REVEAL_MS - startMs);
+            this.schedule.push({
+              ...cell,
+              key: `${layer.slot}:${k}`,
+              slot: layer.slot,
+              x,
+              y,
+              startMs,
+              durationMs
+            });
+          }
+        }
+        this.schedule.sort((a, b) => a.startMs - b.startMs || a.slot - b.slot || a.y - b.y || a.x - b.x);
+        this.pending = new Set(this.schedule.map(i => i.key));
+      }
+
+      cellState(item, elapsedMs) {
+        if (elapsedMs < item.startMs) return { phase: "hidden" };
+        if (elapsedMs >= item.startMs + item.durationMs) return { phase: "settled", glyph: normalizeGlyph(item.char) };
+        const step = Math.floor((elapsedMs - item.startMs) / TICK_MS);
+        const idx = hashCell(item.slot, item.x + step * 17, item.y - step * 11) % 24;
+        return { phase: "scrambling", glyph: SCRAMBLE_CHARS[idx] || "?" };
+      }
+
+      clear() {
+        this.ctx.fillStyle = this.theme.bg;
+        this.ctx.fillRect(0, 0, this.viewport.width, this.viewport.height);
+      }
+
+      settleAll() {
+        for (const item of this.schedule) {
+          if (this.pending.has(item.key)) {
+            const cache = this.caches.find(c => c.layer.slot === item.slot);
+            if (cache) cache.settle(item);
+            this.pending.delete(item.key);
+          }
+        }
+      }
+
+      drawReveal(elapsedMs) {
+        for (const item of this.schedule) {
+          if (this.pending.has(item.key) && this.cellState(item, elapsedMs).phase === "settled") {
+            const cache = this.caches.find(c => c.layer.slot === item.slot);
+            if (cache) cache.settle(item);
+            this.pending.delete(item.key);
+          }
+        }
+        this.clear();
+        for (const cache of this.caches) {
+          if (!cache.layer.visible) continue;
+          cache.draw(this.ctx, 0, 0);
+          for (const item of this.schedule) {
+            if (item.slot !== cache.layer.slot || !this.pending.has(item.key)) continue;
+            const st = this.cellState(item, elapsedMs);
+            if (st.phase === "scrambling") {
+              cache.drawCell(
+                this.ctx,
+                st.glyph,
+                this.viewport.originX + item.x * this.viewport.cellWidth,
+                this.viewport.originY + item.y * this.viewport.cellHeight,
+                this.theme.scramble
+              );
+            }
+          }
+        }
+        return this.pending.size === 0 ? "settled" : "reveal";
+      }
+
+      drawScene(pointer, parallaxScale, spriteOffsets) {
+        this.clear();
+        for (const cache of this.caches) {
+          const slot = cache.layer.slot;
+          const px = pointer.x * cache.layer.depthRate * -6 * parallaxScale;
+          const py = pointer.y * cache.layer.depthRate * -4 * parallaxScale;
+          const spriteShift = (spriteOffsets[slot] || 0) * this.viewport.cellWidth;
+          const wrapW = LAYER_SPRITE_VELOCITIES[slot] ? this.viewport.worldWidth : 0;
+          cache.draw(this.ctx, px + spriteShift, py, wrapW);
+        }
+      }
+    }
+
+    // =========================================================================
+    // 3. FULL-SCREEN BOOTSTRAP & PARALLAX LOOP
+    // =========================================================================
+    async function initApp() {
+      const canvas = document.getElementById("shanghai-canvas");
+      const layers = buildShanghaiScene();
+
+      try {
+        await document.fonts?.load("16px jgs7");
+      } catch (e) {}
+
+      const currentTheme = "musz";
+      const parallaxScale = 2.0;
+      let phase = "reveal";
+      let revealStartTs = null;
+      let lastTs = 0;
+      let currentPtr = { x: 0, y: 0 };
+      let targetPtr = { x: 0, y: 0 };
+      let spriteOffsets = { 8: 0, 10: 0 };
+
+      let renderer = new SkylineRenderer(canvas, layers, BOUNDS, currentTheme);
+
+      function tick(ts) {
+        const dt = lastTs === 0 ? 16 : Math.min(50, ts - lastTs);
+        lastTs = ts;
+
+        if (phase === "reveal") {
+          if (revealStartTs === null) revealStartTs = ts;
+          const elapsed = Math.min(TOTAL_REVEAL_MS, ts - revealStartTs);
+          phase = renderer.drawReveal(elapsed);
+        } else {
+          const alpha = 1 - Math.exp(-dt / 140);
+          currentPtr.x += (targetPtr.x - currentPtr.x) * alpha;
+          currentPtr.y += (targetPtr.y - currentPtr.y) * alpha;
+
+          const totalCols = MAX_X - MIN_X + 1;
+          for (const [slotStr, vel] of Object.entries(LAYER_SPRITE_VELOCITIES)) {
+            const slot = Number(slotStr);
+            spriteOffsets[slot] = ((spriteOffsets[slot] || 0) + (vel * dt) / 1000) % totalCols;
+          }
+
+          renderer.drawScene(currentPtr, parallaxScale, spriteOffsets);
+        }
+        requestAnimationFrame(tick);
+      }
+
+      window.addEventListener("pointermove", e => {
+        targetPtr = {
+          x: Math.max(-1, Math.min(1, (e.clientX / Math.max(1, window.innerWidth)) * 2 - 1)),
+          y: Math.max(-1, Math.min(1, (e.clientY / Math.max(1, window.innerHeight)) * 2 - 1))
+        };
+      }, { passive: true });
+
+      window.addEventListener("pointerleave", () => {
+        targetPtr = { x: 0, y: 0 };
+      }, { passive: true });
+
+      window.addEventListener("blur", () => {
+        targetPtr = { x: 0, y: 0 };
+      }, { passive: true });
+
+      function triggerReplay() {
+        renderer = new SkylineRenderer(canvas, layers, BOUNDS, currentTheme);
+        phase = "reveal";
+        revealStartTs = null;
+      }
+
+      window.addEventListener("click", triggerReplay);
+
+      window.addEventListener("message", e => {
+        if (!e.data) return;
+        if (e.data.type === "mushenzhen:pointer" || e.data.type === "mushanghai:pointer") {
+          targetPtr = {
+            x: Math.max(-1, Math.min(1, Number(e.data.x) || 0)),
+            y: Math.max(-1, Math.min(1, Number(e.data.y) || 0))
+          };
+        } else if (e.data.type === "mushenzhen:replay" || e.data.type === "mushanghai:replay") {
+          triggerReplay();
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        renderer = new SkylineRenderer(canvas, layers, BOUNDS, currentTheme);
+        if (phase === "settled") renderer.settleAll();
+      });
+
+      requestAnimationFrame(tick);
+    }
+
+    initApp();
+  </script>
+</body>
+</html>
